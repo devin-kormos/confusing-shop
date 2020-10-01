@@ -11,7 +11,7 @@ A shop with seemingly no purpose and yet, it exists
 - Javascript
 - HTMl5
 - CSS3
-- SQL
+- PostgreSQL
 
 ## Live Demo
 
@@ -43,7 +43,7 @@ Try the application here [https://meme.cx/apps/confusing-shop](https://meme.cx/a
     npm install
     ```
 
-1. Create an SQL database.
+1. Create an SQL database with a name of your choice.
 
 1. Create a '.env' file in your root directory. Configure it accordingly with your hostname, password, and database name.
     ```txt
