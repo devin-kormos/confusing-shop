@@ -26,7 +26,7 @@ Try the application here [https://meme.cx/apps/confusing-shop](https://meme.cx/a
 
 ## Preview
 
-[![ImageOfThing](https://raw.githubusercontent.com/memecx/student-grade-table/server/public/images/demo.png)]()
+[![ImageOfThing](./server/public/images/demo.png)]()
 
 ## Development
 
