@@ -1,4 +1,6 @@
 import React from 'react';
+import CartSummaryItem from './inner/cart-summary-item';
+import CartSummary from './cart-summary';
 
 class CheckoutForm extends React.Component {
   constructor(props) {
@@ -43,45 +45,44 @@ class CheckoutForm extends React.Component {
   render() {
     const cartTotal = this.props.cart.reduce((acc, cur) => acc + cur.price, 0).toString();
     let dollars, cents;
-    if (cartTotal.length === 3) {
-      dollars = cartTotal.substr(0, 1);
-      cents = cartTotal.substr(-2);
-    } else {
-      dollars = cartTotal.slice(0, -2);
-      cents = cartTotal.substr(-2);
-    }
+    if (cartTotal.length === 3) {dollars = cartTotal.substr(0, 1); cents = cartTotal.substr(-2);
+    } else {dollars = cartTotal.slice(0, -2);cents = cartTotal.substr(-2);}
     return (
       <div className="container mt-4">
-        <h2 className="mt-3 mb-3">My Cart</h2>
-        <h6 className="text-danger font-weight-bold">*This form is for educational purposes only, please do not provide personal information.</h6>
-        <div>
-          <h6 className="pb-4 pt-3 text-muted">{`Order Total: $${dollars}.${cents}`}</h6>
-        </div>
         <div className="row">
-          <form id="checkoutForm" onSubmit={this.handleSubmit} onReset={this.handleReset} className="col-12">
-            <div>
-              <label>Name*</label>
-            </div>
-            <div>
-              <input required value={this.state.name} onChange={this.handleChange} name="name" type="text" className="border rounded input-group mb-3"></input>
-            </div>
-            <div>
-              <label>Credit Card*</label>
-            </div>
-            <div>
-              <input required value={this.state.creditCard} onChange={this.handleChange} name="creditCard" type="text" className="border rounded input-group mb-3"></input>
-            </div>
-            <div>
-              <label>Shipping Address*</label>
-            </div>
-            <div>
-              <textarea required value={this.state.shippingAddress} onChange={this.handleChange} name="shippingAddress" className="shipping-address border rounded input-group mb-3"></textarea>
-            </div>
-            <div className="d-flex justify-content-between mt-3">
-              <a onClick={() => this.props.setView('catalog', {})} className="text-muted mt-3 mb-4 back-to-catalog">&lt; Continue Shopping</a>
-              <button className="mt-3 mb-4 btn btn-primary">Place Order</button>
+          <form id="checkoutForm" onSubmit={this.handleSubmit} onReset={this.handleReset} className="col-8">
+            <h5 className="mt-3 mb-3">Billing Details</h5>
+            <label>Name*</label>
+            <div><input required value={this.state.name} onChange={this.handleChange} name="name" type="text" className="border input-group mb-3 py-1 pl-2"></input></div>
+            <label>Credit Card*</label>
+            <div><input required value={this.state.creditCard} onChange={this.handleChange} name="creditCard" type="text" className="border input-group mb-3 py-1 pl-2"></input></div>
+            <label>Shipping Address*</label>
+            <div><input required value={this.state.shippingAddress} onChange={this.handleChange} name="shippingAddress" className="shipping-address border input-group mb-3 py-1 pl-2"></input></div>
+            <label>Order notes (optional)</label>
+            <div><textarea onChange={this.handleChange} name="orderNotes" className="order-notes border input-group mb-3 py-1 pl-2"></textarea></div>
+            <a onClick={() => this.props.setView('cart', {})} className="text-muted mt-3 mb-4 back-to-catalog">Cart > Checkout</a>
+            <div className="d-flex justify-content-between mt-3 float-right">
+              <button className="m-1 px-4 py-2 btn btn-danger">Place Order</button>
             </div>
           </form>
+          <div className="border checkoutCheckout col-4 p-4">
+            <h4 className="border-bottom pb-3 mb-0">Your order</h4>
+            <div>
+              <div className="pb-2 pt-3 border-bottom">
+                <div className="d-inline-block subtotal">Subtotal</div>
+                <div className="d-inline-block dollardollar">{`$${dollars}.${cents}`}</div>
+              </div>
+              <div className="pb-2 pt-3 border-bottom">
+                <div className="d-inline-block subtotal">Shipping</div>
+                <div className="d-inline-block dollardollar">Free</div>
+              </div>
+              <div className="pb-2 pt-3">
+                <div className="d-inline-block subtotal">Total</div>
+                <div className="d-inline-block dollardollar">{`$${dollars}.${cents}`}</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     );

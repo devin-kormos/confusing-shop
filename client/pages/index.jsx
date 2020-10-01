@@ -11,8 +11,6 @@ class MainPage extends React.Component {
       cart: []
     };
     this.getCartItems = this.getCartItems.bind(this);
-    // this.addToCart = this.addToCart.bind(this);
-    // this.placeOrder = this.placeOrder.bind(this);
   }
 
   componentDidMount() {
@@ -28,7 +26,6 @@ class MainPage extends React.Component {
   }
 
   render() {
-  // console.log('Index', this.state)
     return (
       <div>
         <Header cartItemCount={this.state.cart.length} />

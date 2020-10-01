@@ -90,21 +90,21 @@ export default class App extends React.Component {
       );
     } else if (this.state.view.name === 'cart') {
       return (
-        <div>
+        <div className="container">
           {header}
           <CartSummary setView={this.setView} cart={this.state.cart} />
         </div>
       );
     } else if (this.state.view.name === 'details') {
       return (
-        <div>
+        <div className="container">
           {header}
           <ProductDetails addToCart={this.addToCart} params={this.state.view.params} setView={this.setView} />
         </div>
       );
     } else if (this.state.view.name === 'checkout') {
       return (
-        <div>
+        <div className="container">
           {header}
           <CheckoutForm setView={this.setView} cart={this.state.cart} placeOrder={this.placeOrder} />
         </div>

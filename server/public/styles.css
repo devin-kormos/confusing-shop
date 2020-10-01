@@ -136,6 +136,63 @@ a:hover {
   border-radius: 0;
 }
 
+.detail-view .card-text {
+  color: #212529a3;
+}
+
+.dollarprice {
+  color: #c1272d;
+  font-size: 1.7rem;
+}
+
+.btn-danger {
+  background-color: #c1272d;
+  border-radius: 0;
+}
+
+.description-short,
+.tabs span {
+  background: #eee;
+}
+
+.extras > div:nth-child(odd) {
+  display: none;
+}
+
+.cart-item-div:last-child {
+  border-bottom: 1px solid #dee2e6!important;;
+}
+
+.checkout-area {
+  float: right;
+  width: 400px;
+}
+
+.detail-view > .mb-5 {
+  overflow: hidden;
+}
+
+.subtotal {
+  width: 30%;
+}
+
+.dollardollar {
+  width: 70%;
+  text-align: end;
+}
+
+input, textarea {
+  cursor: text!important;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.checkoutCheckout {
+
+}
+
 body::-webkit-scrollbar {
   width: .8em;
 }

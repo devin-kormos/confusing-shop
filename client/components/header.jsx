@@ -7,14 +7,14 @@ function Header(props) {
     <nav className="container">
       <div className="container-fluid py-5 px-0">
         <div className="container-fluid d-inline-flex px-0 justify-content-between align-items-center">
-          <Link to="/" className="home point navbar-brand">
+          <div onClick={() => props.setView('catalog', {})} className="home point navbar-brand">
             <img src="/images/strawberry.svg" width="40" height="40" className="pr-2" />
-              SHOP
-          </Link>
-          <Link to="/cart" className="cart-div point navbar-brand mr-0">
+              CONFUSING SHOP
+          </div>
+          <div onClick={() => props.setView('cart', {})} className="cart-div point navbar-brand mr-0">
             <span className="mr-2">{`${props.cartItemCount} ${cartText}`}</span>
             <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-          </Link>
+          </div>
         </div>
       </div>
     </nav>
