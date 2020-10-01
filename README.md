@@ -1,6 +1,6 @@
 # Confusing Shop
 
-[![Version](https://img.shields.io/badge/Version-v1.0.1-blue)]()
+[![Version](https://img.shields.io/badge/Version-v1.4.3-blue)]()
 
 A shop with seemingly no purpose and yet, it exists
 
