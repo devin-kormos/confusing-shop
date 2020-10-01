@@ -25,7 +25,7 @@ class ProductDetails extends React.Component {
         </div>
         <div className="row mb-5">
           <div className="col-lg-4 col-sm-12">
-            <img className="product-image" height="400px" width="auto" src={product.image} alt={product.name}></img>
+            <img className="product-image" height="380px" width="auto" src={product.image} alt={product.name}></img>
           </div>
           <div className="col-lg-7 col-sm-12">
             <h2>{product.name}</h2>
