@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   const cartText = props.cartItemCount === 1 ? 'item' : 'items';

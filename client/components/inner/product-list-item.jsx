@@ -19,9 +19,9 @@ function ProductListItem(props) {
           <div className="card-info-t">
             <h5 className="card-title">{props.product.name}</h5>
             <p className="card-text"><small className="text-secondary">${dollars}.{cents}</small></p>
-          <div className="card-text-b pr-3">
+            <div className="card-text-b pr-3">
               <div className="card-text">{props.product.shortDescription}</div>
-          </div>
+            </div>
           </div>
         </div>
       </div>

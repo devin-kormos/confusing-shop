@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import CartSummary from "../components/cart-summary";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import CartSummary from '../components/cart-summary';
 import Header from '../components/header';
-import ProductList from "../components/product-list";
+import ProductList from '../components/product-list';
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -21,21 +21,21 @@ class MainPage extends React.Component {
 
   getCartItems() {
     fetch('/api/cart')
-    .then(response => response.json())
-    .then(data => {
-      this.setState({ cart: data });
-    });
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ cart: data });
+      });
   }
 
-render() {
+  render() {
   // console.log('Index', this.state)
-  return (
-    <div>
-      <Header cartItemCount={this.state.cart.length} />
-      <ProductList />
-    </div>
-  )
-}
+    return (
+      <div>
+        <Header cartItemCount={this.state.cart.length} />
+        <ProductList />
+      </div>
+    );
+  }
 
 }
 

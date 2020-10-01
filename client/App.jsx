@@ -14,9 +14,9 @@ import {
   Switch,
   Link,
   Redirect
-} from 'react-router-dom'
+} from 'react-router-dom';
 
-//Pages
+// Pages
 import MainPage from './pages/index';
 import NotFoundPage from './pages/404';
 import CartPage from './pages/cart';
@@ -48,18 +48,18 @@ export default class App extends React.Component {
   }
 
   placeOrder(order) {
-  fetch('/api/orders', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(order)
-  })
-    .then(() => {
-      this.setState({ cart: [] });
-      this.setState({ view: { name: 'catalog', params: {} } });
-    });
-}
+    fetch('/api/orders', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(order)
+    })
+      .then(() => {
+        this.setState({ cart: [] });
+        this.setState({ view: { name: 'catalog', params: {} } });
+      });
+  }
 
   render() {
     return (
