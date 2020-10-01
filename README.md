@@ -26,7 +26,7 @@ Try the application here [https://meme.cx/apps/confusing-shop](https://meme.cx/a
 
 ## Preview
 
-[![ImageOfThing](./server/public/images/demo.png)]()
+[![ImageOfThing](/server/public/images/demo.png)]()
 
 ## Development
 
@@ -35,7 +35,22 @@ Try the application here [https://meme.cx/apps/confusing-shop](https://meme.cx/a
 1. Clone the repository.
 
     ```shell
-    git clone https://github.com/devin-kormos/wicked-sales-js.git
+    git clone https://github.com/devin-kormos/confusing-shop.git
     ```
 
-1. Navigate to where you cloned it to and you're ready.
+1. Navigate to the directory on your bash terminal and install the dependencies through
+    ```js
+    npm install
+    ```
+
+1. Create an SQL database.
+
+1. Create a '.env' file in your root directory. Configure it accordingly with your hostname, password, and database name.
+    ```txt
+    PORT=3001
+    DEV_SERVER_PORT=3000
+    DATABASE_URL=postgres://HOSTNAME:PASSWORD@localhost/DATABASENAME
+    SESSION_SECRET=secret
+    ```
+
+1. To start this locally, from the 'confusing-shop' directory, type <code>npm run dev</code>
