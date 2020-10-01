@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1)
--- Dumped by pg_dump version 10.12 (Ubuntu 10.12-0ubuntu0.18.04.1)
+-- Dumped from database version 10.14 (Ubuntu 10.14-0ubuntu0.18.04.1)
+-- Dumped by pg_dump version 10.14 (Ubuntu 10.14-0ubuntu0.18.04.1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -252,16 +252,16 @@ COPY public."cartItems" ("cartItemId", "cartId", "productId", price) FROM stdin;
 --
 
 COPY public.carts ("cartId", "createdAt") FROM stdin;
-1	2020-09-17 14:42:53.93511-05
-2	2020-09-17 14:48:06.910218-05
-3	2020-09-17 14:49:27.60216-05
-4	2020-09-17 14:50:00.290629-05
-5	2020-09-17 14:52:25.637236-05
-6	2020-09-17 14:52:47.883036-05
-7	2020-09-17 15:06:17.57197-05
-8	2020-09-17 15:12:04.675335-05
-9	2020-09-17 18:16:21.679243-05
-10	2020-09-28 13:56:58.768386-05
+1	2020-09-17 12:42:53.93511-07
+2	2020-09-17 12:48:06.910218-07
+3	2020-09-17 12:49:27.60216-07
+4	2020-09-17 12:50:00.290629-07
+5	2020-09-17 12:52:25.637236-07
+6	2020-09-17 12:52:47.883036-07
+7	2020-09-17 13:06:17.57197-07
+8	2020-09-17 13:12:04.675335-07
+9	2020-09-17 16:16:21.679243-07
+10	2020-09-28 11:56:58.768386-07
 \.
 
 
@@ -278,12 +278,12 @@ COPY public.orders ("orderId", "cartId", name, "creditCard", "shippingAddress", 
 --
 
 COPY public.products ("productId", name, price, image, "shortDescription", "longDescription") FROM stdin;
-7	Cauldron	6660	/images/cauldron-product.jpg	Forged in the heart of a dragon, this cauldron is guaranteed not to scratch or crack, even when brewing the strongest of poisons!	Coated with carbonized pixie dust, this cauldron ensures a pure brew every time. Each cauldron comes with a double lifetime warranty, for you and your reincarnation. Clap on heating spells convenience for you, enabling potion making on-the-go. Tap the rim with your wand to enable time-stasis, so you can finish your potion after looking for the missing salamander tail!
-8	Spell Book	666	/images/spell-book.png	Full of the common and useful spells for the practicing witch, this spell book will be your handy guide for day to day witching.	Tired of forgetting how to cast a cleaning charm? Worried that you might misspeak when summoning a simple cleaning imp? Can’t remember exactly where those lay lines lie? Then this compendium of magical knowledge is the spell book for you! Use the command spell “find” to quickly flip to the page that contains your spell, eliminating the need for a bookmark.
-9	Witch Hat	1993	/images/witch-hat.jpg	This stylish hat curves so that it can fit under low hanging door frames and beams, perfect for taller witches.	This hat was designed by the ever decrepit Mrs. Bones. She says of this hat, “Practicality and fashion should go hand in hand, and it was with that in mind that I created this hat. The creases along the hat actually amplify magical intonations, boosting spell power by 15%!”. Truely, a magical hat brought to you by the world’s most magical pile of bones.
-10	Potion Collection	3940	/images/potions.jpg	Why go through the hassle of brewing basic potions? This collection of everyday brews will keep you stocked for weeks.	Gone are the days when witches had a month to wait to gather enough sunbeam for bottled sunbeam. Gone are the days when mermaids could be found on every rock this side of the british channel. The modern witch has no time to spare, but these potions are used in even the most basic of brews. What’s a girl to do?Well, worry no longer! This collection has been put together by professional warlocks specialized in procuring the purest and hardest to find ingredients. This collection of common potions will keep you brewing for as long as you need, and your first refill is on us
-11	Crystal Ball	5580	/images/crystal-ball.jpg	The latest in clairvoyant technology, this crystal ball contains a dimensional oscillator so you can peer into multiple universes!	There is no trouble with foggy visions with this crystal ball. A helper imp, using complex binding rituals, is imprisoned within the aether shell of the crystal, locked out of time and committed to keeping your crystal ball clear! Our customers are very impressed with the “favorites” feature, allowing you to save common divination requests so that you can save time on lengthy rituals. It also features notifications, so you can stay up to date with the daily happenings of your divination target.
-12	Broomstick	2000	/images/broomsticks.jpg	Each of these fantastic broomsticks is handmade upon order by tree goblins in Tanzania, making them a wonderful, unique addition to your commute.	Some thought the tree goblins of Tanzania a myth, their artifacts cleverly concocted by enterprising hooligans. Ever since their civilization was confirmed via WBC, their products have been difficult, if not impossible, to come by. We have received an exclusive deal to distribute their one-of-a-kind broomsticks to the world, and we could not be happier about it! Each one is a work of art, and the speed and handling far outclasses the gingersnap model of yesteryear. Don’t be left in the dust! Pick one up for yourself, and be on the cutting edge of broomstick tech!
+1	Cube	1800	/images/cube.jpg	The Boskke Cube is a self - watering planter that is perfect for herbs and houseplants. Recommended for both green and brown thumbs, simply fill the cube with water and let the plant absorb the water through the terra - cotta base and have fresh herb ingredients for any meal.	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+2	Big Iron	2400	/images/big-iron.jpg	Big Iron adds a traditional and simple Japanese look to any bookshelf. Designed in 1965 by Shotaro Miya.	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+3	Vessel	900	/images/vessel.jpg	Meet Vessel. Vessel is shy and bashful, and likes collecting spoons.Cuddle up with this 100 % organically grown plant.	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+4	Nourished	2000	/images/nourished.jpg	This e-book takes you through the history of Dieter Rams ’ 30 plus years at Braun. Written by Sophie Lovell and a forward by Apple ’ s Senior Vice President of Design, Jony Ivy..	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, mante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+5	Oak Tray	2300	/images/oak-tray.jpg	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper egestas ipsum, sed bibendum purus sodales hendrerit. Fusce porttitor mi placerat diam viverra finibus tristique vitae neque. Curabitur a porttitor mauris.	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+6	Shapemaker	1200	/images/shapemaker.jpg	These colorful wood blocks inspire endless creativity. Shapes, colors, and the designs on each block allow you to create fun faces and patterns.	These colorful wood blocks inspire endless creativity. Shapes, colors, and the designs on each block allow you to create fun faces and patterns.
 \.
 
 
@@ -357,3 +357,4 @@ GRANT ALL ON SCHEMA public TO PUBLIC;
 --
 -- PostgreSQL database dump complete
 --
+

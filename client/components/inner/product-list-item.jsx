@@ -14,7 +14,7 @@ function ProductListItem(props) {
   return (
     <div className="col-lg-4 col-sm-12 col-md-6 d-flex align-items-stretch mb-5 product">
       <div onClick={() => props.setView('details', { productId: props.product.productId, dollars: dollars, cents: cents })} className="card point product-card">
-        <img height="200" src={props.product.image} className="card-img product-image" height="420" alt={props.product.name} />
+        <img height="200" src={props.product.image} className="card-img product-image" width="320" height="420" alt={props.product.name} />
         <div className="card-img-overlay internal">
           <div className="card-info-t">
             <h5 className="card-title">{props.product.name}</h5>
