@@ -18,9 +18,6 @@ class ProductList extends React.Component {
   render() {
     return (
       <div className="container px-0">
-        <div className="text-center mb-3">
-          Products
-        </div>
         <div className="card-deck">
           {
             this.state.products.map(product => {
