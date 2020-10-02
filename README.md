@@ -15,7 +15,7 @@ A shop with seemingly no purpose and yet, it exists
 
 ## Live Demo
 
-Try the application here [https://cs.meme.cx/](https://cs.meme.cx/)
+Try the application here [https://cs.meme.cx/](http://cs.meme.cx/)
 
 ## Features
 
